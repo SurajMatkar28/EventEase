@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - EventMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="animated-bg services-page">
+    <div class="bg-animation">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="logo">EventMaster</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button id="loginBtn" class="btn">Login</button>
+                <button id="signupBtn" class="btn">Sign Up</button>
+            </div>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Our Services</h1>
+            <p>Everything you need for a seamless event experience</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="services-container">
+                <div class="service-card">
+                    <h3>Lost and Found</h3>
+                    <form id="lostItemForm" class="service-form">
+                        <div class="form-group">
+                            <label for="itemName">Item Description</label>
+                            <input type="text" id="itemName" placeholder="What did you lose?">
+                        </div>
+                        <div class="form-group">
+                            <label for="lostLocation">Last Seen Location</label>
+                            <input type="text" id="lostLocation" placeholder="Where did you last see it?">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactInfo">Contact Information</label>
+                            <input type="text" id="contactInfo" placeholder="Your phone or email">
+                        </div>
+                        <button type="submit" class="btn">Submit Report</button>
+                    </form>
+                </div>
+                <div class="service-card">
+                    <h3>Parking Reservation</h3>
+                    <form id="parkingForm" class="service-form">
+                        <div class="form-group">
+                            <label for="eventSelect">Select Event</label>
+                            <select id="eventSelect">
+                                <option value="">Choose an event</option>
+                                <option value="music">Music Festival 2023</option>
+                                <option value="tech">Tech Conference</option>
+                                <option value="food">Food & Wine Festival</option>
+                                <option value="sports">Sports Championship</option>
+                                <option value="art">Art Exhibition</option>
+                                <option value="comedy">Comedy Night</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="parkingDate">Date</label>
+                            <input type="date" id="parkingDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicleType">Vehicle Type</label>
+                            <select id="vehicleType">
+                                <option value="car">Car</option>
+                                <option value="suv">SUV</option>
+                                <option value="van">Van</option>
+                                <option value="motorcycle">Motorcycle</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Reserve Spot</button>
+                    </form>
+                </div>
+                <div class="service-card">
+                    <h3>Emergency Contacts</h3>
+                    <div class="emergency-contacts">
+                        <div class="emergency-contact">
+                            <i class="fas fa-first-aid"></i>
+                            <div>
+                                <h4>Medical Emergency</h4>
+                                <p>Call: <a href="tel:911">911</a></p>
+                                <p>On-site Medical: <a href="tel:555-123-4567">555-123-4567</a></p>
+                            </div>
+                        </div>
+                        <div class="emergency-contact">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Security</h4>
+                                <p>Event Security: <a href="tel:555-987-6543">555-987-6543</a></p>
+                            </div>
+                        </div>
+                        <div class="emergency-contact">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <h4>Information Desk</h4>
+                                <p>General Inquiries: <a href="tel:555-456-7890">555-456-7890</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>EventMaster</h3>
+                <p>Your Ultimate Event Management Solution</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="announcements.html">Announcements</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> info@eventmaster.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 EventMaster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p class="form-switch">Don't have an account? <a href="#" id="switchToSignup">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Create an Account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <input type="password" id="signupConfirmPassword" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <p class="form-switch">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+        </div>
+    </div>
+
+    <script src="p1.js"></script>
+</body>
+</html>
